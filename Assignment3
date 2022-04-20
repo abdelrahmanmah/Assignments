@@ -1,0 +1,255 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+	//problem1
+	/*int c;
+	for (size_t i = 2; i <= 5; i++) {
+		for (size_t x = 1; x <= 5; x++) {
+			c = i * x;
+			cout << setw(5)<<c;
+
+		}
+		cout<<endl;
+	}*/
+
+	//-------------------------------------------------//
+
+		//problem2
+		/*int sum = 0, num;
+		for (num = 10; num <= 20; num++) {
+			sum = sum + pow(num, 2);
+		}
+		cout << sum;*/
+
+		//-------------------------------------------------//
+
+			//problem 3
+			//a
+			/*for (int i = 1; i <= 10; i++) {
+				for (int k = 1; k <= i; k++) {
+					cout << "*";
+				}
+				cout << endl;
+			}*/
+
+			//b
+			/*for (int i = 1; i <= 10; i++) {
+				for (int k = 9; k >= i; k--) {
+					cout << "*";
+				}
+				cout<<endl;
+			}*/
+
+			//c
+			/*for (int i = 1; i <= 10; i++) {
+				for (int k = 9; k >= i; k--) {
+					cout << k;
+				}
+				cout << endl;
+			}*/
+
+			//d
+			/*for (size_t i = 1; i <= 5; i++) {
+				for (size_t k = 1; k <= 5; k++) {
+
+					if (i == 1 || i == 5) {
+						cout << setw(2) <<"#";
+					}
+					else if (k == 1 || k == 5) {
+						cout << setw(2) << "#";
+					}
+					else {
+						cout << setw(2) << "*";
+					}
+
+				}
+				cout<<endl;
+			}*/
+
+			//e 
+			/*for (size_t i = 1; i <= 5; i++) {
+				for (size_t k = 1; k <= 5; k++) {
+					cout << setw(3) << "#*";
+				}
+				cout << endl;
+			}*/
+
+			//f
+				/*
+				for (size_t i = 1; i <= 6; i++) {
+
+
+					for (size_t k = 1; k <= i; k++) {
+						if (i == 1) {
+							cout << "@";
+						}
+						else if (i % 3 == 0) {
+							cout << "&";
+						}
+
+						else if (i % 2 == 0) {
+							cout << "#";
+						}
+						else if (i % 2 != 0) {
+							cout << "&";
+						}
+
+					}
+					c++;
+					cout << endl;
+				}
+				cout << endl;*/
+
+				//--------------------------------------------------//
+
+//problem 4
+	/*int s = 0, i = 1;
+	while (i <= 10) {
+		s = s + i;
+		i++;
+	}
+	cout << s;*/
+
+	//-------------------------------------------------//
+
+	//problem 5
+	/*int n;
+	cin >> n;
+	double x = 0;
+	double s;
+	s = 1.0 / (1 + n * n);
+	while (s > 0.01)
+	{
+		n++;
+		x = x + s;
+	}*/
+
+	//------------------------------------------------//
+
+	//problem 6
+	//a
+	/*int s = 0;
+	for (int i = 2; i <= 100; i++) {
+		if (i % 2 == 0) {
+			s = s + i;
+		}
+	}
+	cout << "the sum is " << s;*/
+
+	//b
+	/*int sum = 0;
+	for (int i = 1; i <= 100; i++) {
+		sum = sum + pow(i, 2);
+	}
+	cout << sum;*/
+
+	//c
+	/*for (int i = 2; i <= 220; i++) {
+
+		cout << "2" << " to power " << i<< " = "<<pow(2, i)<<endl;
+	}*/
+
+	//d
+	/*int start, end, sum = 0;
+	cout << "Enter the range of number..\nFrom: ";
+	cin >> start;
+	cout << "To: ";
+	cin >> end;
+	for (start; start <= end; start++) {
+		if (start % 2 != 0) {
+			sum = sum + start;
+		}
+	}
+	cout << "The sum is " << sum;*/
+
+
+	//e
+	/*long num;
+	int remainder;
+
+	cout << "Please enter the number: ";
+	cin >> num;
+	long sum = 0;
+	while (num > 0) {
+		remainder = num % 10;
+		if (remainder % 2 != 0) {
+			sum += remainder;
+		}
+		num = num/ 10;
+	}
+	cout <<"The sum of the odd diget = "<< sum;
+	*/
+	//------------------------------------------------//
+
+		//Problem 7
+	/*int num, max, min = 0;
+	cout << "Please enter the sequence of integer..\nNOTE: TO STOP ENTERING PLEASE ENTER 0 ";
+	cin >> num;
+	max = num;
+	do {
+		cin >> num;
+		if (num > max) {
+			max = num;
+		}
+		else if (num < min && num !=0) {
+			min = num;
+		}
+	} while (num != 0);
+	cout << "The largest number is : " << max << endl;
+	cout << "The Smallest number is : " << min;*/
+
+
+	//b
+	/*int num, Ecounter = 0, Ocounter = 0;
+	cout << "Please enter the sequence of integer..\nNOTE: TO STOP ENTERING PLEASE ENTER 0 ";
+	do {
+		cin >> num;
+		if (num % 2 == 0) {
+			Ecounter++;
+		}
+		else {
+			Ocounter++;
+		}
+	} while (num != 0);
+	cout << "The number of the EVEN numbers = " << Ecounter - 1 << endl;
+	cout << "The number of the ODD numbers = " << Ocounter;*/
+
+	//-----------------------------------------------------------------------------------------------//
+
+	// Problem 8
+	/*float num, sum = 0, avg = 0, max = 0, min = 0, counter = 0, range = 0;
+	cout << "please enter the set of floating-point..\nNOTE: TO STOP ENTERING PLEASE ENTER 0 ";
+	do {
+		cin >> num;
+		if (num == 0) {
+			break;
+		}
+		counter++;
+		sum = sum + num;
+		avg = sum / counter;
+		if (num > max) {
+			max = num;
+		}
+		else if (num < max && num !=0 ) {
+			min = num;
+		}
+		range = max - min;
+	} while (num != 0);
+	cout << "AVG = " << avg << endl;
+	cout << "The Smallest number is : " << min<<endl;
+	cout << "The largest number is : " << max << endl;
+	cout << "The Range = " << range;*/
+
+	//----------------------------------------------------------------------------------------------------//
+
+	//Problem 9
+	/*for (int i = 1; i <= 10; i++) {
+		for (int k = 1; k <= 10; k++) {
+			cout << setw(5)<<i * k;
+		}
+		cout<<endl;
+	}*/
+}
